@@ -61,5 +61,13 @@ package "ECサイト" as target_system {
             name
             reg_date
             }
+         
+}
+
+customer       |o-ri-o{     order
+order          ||-ri-|{     order_detail
+order_detail    }-do-||     items
+items          }o-le-||     favorite
+
 @enduml
 ```
